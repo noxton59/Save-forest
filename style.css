@@ -1,0 +1,122 @@
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 9;
+}
+.background-image {
+  background-image: url(Images/forest-bg.jpg);
+  background-size: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+}
+.navbar-config {
+  opacity: 0.9;
+  background: linear-gradient(141deg, rgba(124,161,136,1) 0%, rgba(0,170,19,0.4543067226890757) 100%);
+  color: white;
+}
+.menu-link {
+  color: white;
+}
+.menu-link:hover {
+  color: rgb(0, 121, 0);
+}
+.forest-describe {
+  background-color: white;
+  border-radius: 20px;
+  opacity: 0.9
+}
+
+.forest-advantage {
+  padding: 0px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 5rem;
+  height: 5rem;
+}
+.img-wrapper {
+  object-fit: fill;
+}
+.img-config {
+  object-position: center;
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
+  border-radius: 20px 20px 0px 0px;
+}
+.img-describe {
+  border-radius: 0px 0px 20px 20px;
+  padding: 10px;
+  color: white;
+  background-color: gray;
+}
+.carousel-control-prev, .carousel-control-next {
+  height: 600px;
+}
+.carousel-indicators {
+  top: 550px;
+}
+.deforestation {
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 20px;
+}
+
+.save-forest {
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 20px;
+  margin-bottom: 200px;
+}
+.sf-img-config {
+  height: 400px;
+}
+.accordion-button:not(.collapsed) {
+  color: white;
+  background-color: rgb(0, 122, 0);
+}
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 164, 0, 0.25);
+}
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+/* style accordion arrows */
+.minimize-link {
+  color: rgb(7, 158, 2);
+}
+.minimize-link:hover {
+  color: rgb(0, 210, 0);
+}
+.list-group-item.active {
+  background-color: rgb(0, 122, 0);
+  border-color: rgb(0, 164, 0);
+}
+.gap-div {
+  height: 68px;
+}
+@media (max-width: 1000px) {
+  .img-config {
+    height: auto;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    height: 400px;
+  }
+  .carousel-indicators {
+    top: 10px;
+  }
+  
+}
+@media (max-width: 1400px) {
+  .sf-img-config {
+    height: 100%;
+  }
+}
