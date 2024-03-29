@@ -18,7 +18,7 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
                 <a class="nav-link menu-link" aria-current="page" href="#advantages">Advantages</a>
@@ -198,7 +198,7 @@
     <div class="container col-lg-10 save-forest">
       <div class="text-center fs-2 fw-bold">How to save forest</div>
       <nav>
-        <div class="nav nav-tabs fs-5 fw-semibold" id="nav-tab" role="tablist">
+        <div class="nav nav-pills fs-5 fw-semibold minimize-pills" id="pills-tab" role="tablist">
           <button class="nav-link minimize-link active" id="nav-plant-tab" data-bs-toggle="tab" data-bs-target="#nav-plant" type="button" role="tab" aria-controls="nav-plant" aria-selected="true">Plant</button>
           <button class="nav-link minimize-link" id="nav-learn-tab" data-bs-toggle="tab" data-bs-target="#nav-learn" type="button" role="tab" aria-controls="nav-learn" aria-selected="false">Learn</button>
           <button class="nav-link minimize-link" id="nav-teach-tab" data-bs-toggle="tab" data-bs-target="#nav-teach" type="button" role="tab" aria-controls="nav-teach" aria-selected="false">Teach</button>
@@ -236,25 +236,26 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane fade p-3" id="nav-explore" role="tabpanel" aria-labelledby="nav-explore-tab" tabindex="0">
-          <div class="row">
-            <div class="col-6 col-lg-4">
-              <div class="list-group" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action active" id="list-cut-down-list" data-bs-toggle="list" href="#list-cut-down" role="tab" aria-controls="list-cut-down">Cut down on how many paper and wood products you use.</a>
-                <a class="list-group-item list-group-item-action" id="list-recycle-list" data-bs-toggle="list" href="#list-recycle" role="tab" aria-controls="list-recycle">Recycle as much of your paper as possible.</a>
-                <a class="list-group-item list-group-item-action" id="list-digital-list" data-bs-toggle="list" href="#list-digital" role="tab" aria-controls="list-digital">Opt for digital versions of paper printouts.</a>
-                <a class="list-group-item list-group-item-action" id="list-switch-list" data-bs-toggle="list" href="#list-switch" role="tab" aria-controls="list-switch">Switch to reusable bags instead of plastic or paper ones.</a>
-                <a class="list-group-item list-group-item-action" id="list-reduce-list" data-bs-toggle="list" href="#list-reduce" role="tab" aria-controls="list-reduce">Reduce your carbon footprint by driving less.</a>
-              </div>
+        <div class="tab-pane fade p-3 minimize-panel" id="nav-explore" role="tabpanel" aria-labelledby="nav-explore-tab" tabindex="0">
+          <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3 col-lg-3 minimize-pills-links" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link active" id="v-pills-cur-down-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cur-down" type="button" role="tab" aria-controls="v-pills-cur-down" aria-selected="true">Cut down</button>
+              <button class="nav-link" id="v-pills-recycle-tab" data-bs-toggle="pill" data-bs-target="#v-pills-recycle" type="button" role="tab" aria-controls="v-pills-recycle" aria-selected="false">Recycle</button>
+              <button class="nav-link" id="v-pills-digital-tab" data-bs-toggle="pill" data-bs-target="#v-pills-digital" type="button" role="tab" aria-controls="v-pills-digital" aria-selected="false">Digital versions</button>
+              <button class="nav-link" id="v-pills-switch-tab" data-bs-toggle="pill" data-bs-target="#v-pills-switch" type="button" role="tab" aria-controls="v-pills-switch" aria-selected="false">Switch</button>
+              <button class="nav-link" id="v-pills-reduce-tab" data-bs-toggle="pill" data-bs-target="#v-pills-reduce" type="button" role="tab" aria-controls="v-pills-reduce" aria-selected="false">Reduce</button>
             </div>
-            <div class="col-6 col-lg-8">
-              <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="list-cut-down" role="tabpanel" aria-labelledby="list-cut-down-list">Things like napkins, notebooks, paper plates, and tissues all come from trees. If you make an effort to use fewer of these items, you’ll help reduce the number of trees that need to be cut down.</div>
-                <div class="tab-pane fade" id="list-recycle" role="tabpanel" aria-labelledby="list-recycle-list">This includes things like cardboard, cereal boxes, old homework, newspapers—anything that is paper and is free of food products can usually be recycled. Instead of just placing these things in the trash, make a conscious effort to set them aside in a recycling bin instead.</div>
-                <div class="tab-pane fade" id="list-digital" role="tabpanel" aria-labelledby="list-digital-list">Many places are now offering the option to receive things like receipts, bills, and concert tickets through an email online instead of by printing them out. When you’re offered the chance, choose not to have a printed receipt or other printout to save the paper.</div>
-                <div class="tab-pane fade" id="list-switch" role="tabpanel" aria-labelledby="list-switch-list">Many grocery and retail stores now offer reusable bags you can purchase to bring home your goods in, helping reduce the number of plastic and paper bags that are used. Stash some reusable bags in your car for grocery days so you can help save the environment.</div>
-                <div class="tab-pane fade" id="list-reduce" role="tabpanel" aria-labelledby="list-reduce-list">When you drive, your car releases harmful carbon dioxide into the air, and the trees are the ones that remove this gas from the air. By driving less, you'll help out the trees while improving our air quality. There are many ways you can reduce your carbon footprint, from carpooling with friends or coworkers to taking public transportation.</div>
-              </div>
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-cur-down" role="tabpanel" aria-labelledby="v-pills-cur-down-tab" tabindex="0">
+                Cut down on how many paper and wood products you use. Things like napkins, notebooks, paper plates, and tissues all come from trees. If you make an effort to use fewer of these items, you’ll help reduce the number of trees that need to be cut down.</div>
+              <div class="tab-pane fade" id="v-pills-recycle" role="tabpanel" aria-labelledby="v-pills-recycle-tab" tabindex="0">
+                Recycle as much of your paper as possible. This includes things like cardboard, cereal boxes, old homework, newspapers—anything that is paper and is free of food products can usually be recycled. Instead of just placing these things in the trash, make a conscious effort to set them aside in a recycling bin instead.</div>
+              <div class="tab-pane fade" id="v-pills-digital" role="tabpanel" aria-labelledby="v-pills-digital-tab" tabindex="0">
+                Opt for digital versions of paper printouts. Many places are now offering the option to receive things like receipts, bills, and concert tickets through an email online instead of by printing them out. When you’re offered the chance, choose not to have a printed receipt or other printout to save the paper.</div>
+              <div class="tab-pane fade" id="v-pills-switch" role="tabpanel" aria-labelledby="v-pills-switch-tab" tabindex="0">
+                Switch to reusable bags instead of plastic or paper ones. Many grocery and retail stores now offer reusable bags you can purchase to bring home your goods in, helping reduce the number of plastic and paper bags that are used. Stash some reusable bags in your car for grocery days so you can help save the environment.</div>
+              <div class="tab-pane fade" id="v-pills-reduce" role="tabpanel" aria-labelledby="v-pills-reduce-tab" tabindex="0">
+                Reduce your carbon footprint by driving less. When you drive, your car releases harmful carbon dioxide into the air, and the trees are the ones that remove this gas from the air. By driving less, you'll help out the trees while improving our air quality. There are many ways you can reduce your carbon footprint, from carpooling with friends or coworkers to taking public transportation.</div>
             </div>
           </div>
         </div>
@@ -264,3 +265,22 @@
     <script src="bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
+
+<!-- <div class="col-6 col-lg-4">
+  <div class="list-group" id="list-tab" role="tablist">
+    <a class="list-group-item list-group-item-action active" id="list-cut-down-list" data-bs-toggle="list" href="#list-cut-down" role="tab" aria-controls="list-cut-down">Cut down on how many paper and wood products you use.</a>
+    <a class="list-group-item list-group-item-action" id="list-recycle-list" data-bs-toggle="list" href="#list-recycle" role="tab" aria-controls="list-recycle">Recycle as much of your paper as possible.</a>
+    <a class="list-group-item list-group-item-action" id="list-digital-list" data-bs-toggle="list" href="#list-digital" role="tab" aria-controls="list-digital">Opt for digital versions of paper printouts.</a>
+    <a class="list-group-item list-group-item-action" id="list-switch-list" data-bs-toggle="list" href="#list-switch" role="tab" aria-controls="list-switch">Switch to reusable bags instead of plastic or paper ones.</a>
+    <a class="list-group-item list-group-item-action" id="list-reduce-list" data-bs-toggle="list" href="#list-reduce" role="tab" aria-controls="list-reduce">Reduce your carbon footprint by driving less.</a>
+  </div>
+</div> -->
+<!-- <div class="col-6 col-lg-8">
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="list-cut-down" role="tabpanel" aria-labelledby="list-cut-down-list">Things like napkins, notebooks, paper plates, and tissues all come from trees. If you make an effort to use fewer of these items, you’ll help reduce the number of trees that need to be cut down.</div>
+    <div class="tab-pane fade" id="list-recycle" role="tabpanel" aria-labelledby="list-recycle-list">This includes things like cardboard, cereal boxes, old homework, newspapers—anything that is paper and is free of food products can usually be recycled. Instead of just placing these things in the trash, make a conscious effort to set them aside in a recycling bin instead.</div>
+    <div class="tab-pane fade" id="list-digital" role="tabpanel" aria-labelledby="list-digital-list">Many places are now offering the option to receive things like receipts, bills, and concert tickets through an email online instead of by printing them out. When you’re offered the chance, choose not to have a printed receipt or other printout to save the paper.</div>
+    <div class="tab-pane fade" id="list-switch" role="tabpanel" aria-labelledby="list-switch-list">Many grocery and retail stores now offer reusable bags you can purchase to bring home your goods in, helping reduce the number of plastic and paper bags that are used. Stash some reusable bags in your car for grocery days so you can help save the environment.</div>
+    <div class="tab-pane fade" id="list-reduce" role="tabpanel" aria-labelledby="list-reduce-list">When you drive, your car releases harmful carbon dioxide into the air, and the trees are the ones that remove this gas from the air. By driving less, you'll help out the trees while improving our air quality. There are many ways you can reduce your carbon footprint, from carpooling with friends or coworkers to taking public transportation.</div>
+  </div>
+</div> -->
